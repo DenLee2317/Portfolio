@@ -1,0 +1,9 @@
+User-agent: Yandex
+Disallow: /cgi-bin
+Host: https://vmtoken.io
+
+User-agent: *
+Disallow: /cgi-bin
+Allow: /*.js
+
+Sitemap: https://vmtoken.io/sitemap.xml

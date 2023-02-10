@@ -1,0 +1,318 @@
+@font-face{
+font-family:'Ubuntu';
+src:url('../fonts/UbuntuRegular.eot');
+src:url('../fonts/UbuntuRegular.eot?#iefix')format('embedded-opentype'),
+url('../fonts/UbuntuRegular.woff')format('woff'),
+url('../fonts/UbuntuRegular.ttf')format('truetype');
+font-weight:normal;
+font-style:normal;
+}
+@font-face{
+font-family:'Ubuntu';
+src:url('../fonts/UbuntuBold.eot');
+src:url('../fonts/UbuntuBold.eot?#iefix')format('embedded-opentype'),
+url('../fonts/UbuntuBold.woff')format('woff'),
+url('../fonts/UbuntuBold.ttf')format('truetype');
+font-weight:bold;
+font-style: normal;}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	outline: none;
+}
+.red {
+	color:#b10015;
+}
+.red1 {
+	color:#e4001a;
+}
+.red2 {
+	color:#e32237;
+}
+.light-red {
+	color:#e1001b;
+}
+.grey {
+	color:#666;
+}
+.white {
+	color:#eee;
+}
+.name-description {
+	color:#eee;
+	text-transform:uppercase;
+	letter-spacing:8px;
+	opacity:0.6;
+}
+
+.nav-link:hover {
+	color:#fff !important;
+}
+header .bg-dark {
+	background:none !important;
+}
+
+.fixed-top {
+	position:absolute !important;
+}
+.start {
+	height: 100vh;
+	border-bottom:2px solid #b10015;
+	background:url(../img/bg.jpg) no-repeat;
+	background-size:cover;
+	min-height:30rem;
+	background-position: center center;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+	width: 100%;
+}
+#demo-canvas {
+	position:absolute;
+}
+.logo {
+	/padding:8rem 0 5rem;
+}
+.logo-description {
+	opacity:0.6;
+	position:relative;
+	animation:shadow;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	
+}
+.mission p {
+	position: relative;
+	opacity:0.8;
+	animation: mission 0.5s infinite ease-in-out;
+	animation-iteration-count:1;
+}
+@keyframes mission {
+	from {opacity:0;top:10rem;}
+	to {opacity:0.8;top:0rem;}
+}
+.scroll-icon {
+	color:#ccc;
+	opacity: 0.8;
+	transition: all 0.3s;
+}
+.scroll-icon:hover {
+	color:#e1001b;
+}
+#game,
+#shem,
+#circle {
+	padding:7rem 0;
+}
+#roadmap {
+	padding:0;
+	background:url(../img/bg_rm.jpg) no-repeat top center;
+	background-size:cover;
+}
+.game-icons img {
+	width:40%;
+}
+.svg-icons {
+	display:block;
+	width:40%;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: default;
+}
+.ico svg {
+	stroke: #eee;
+	fill: #eee;	
+}
+.ico  svg:hover {
+	stroke:#e1001b;
+	fill:#e1001b;
+}
+#predlozh {
+	padding:7rem 0;
+	border-bottom:2px solid #b10015;
+	background: linear-gradient(to right, #3d3b41, #3f3838);
+}
+#best,
+#indicators {
+	padding:7rem 0 8rem 0;
+	border-bottom:2px solid #b10015;
+	background: linear-gradient(to right, #3d3b41, #3f3838);
+}
+#predlozh .card {
+	border:2px solid #fff;
+}
+#predlozh a {
+	text-decoration:none;
+	color:#222;
+}
+#predlozh a img {
+	filter: grayscale(100%);
+	transition: all 0.3s;
+}
+#predlozh a:hover img {
+	filter: grayscale(0%);
+}
+#team {
+	padding:7rem 0;
+}
+#team .photo {
+	width:50%;
+	-webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);	
+}
+#team .photo:hover {
+  -webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);	
+}
+#team a {
+	color:#666;
+}
+#team a:hover,
+#team a:focus,
+#team a:active {
+	color:#b10015;
+}
+#partners {
+	background:#f1f1f1;
+	padding:3rem 0;
+}
+#copyright {
+	background:#3d3b41;
+	color:#ccc;
+	padding:5rem 0;
+}
+.footer-social a {
+	color:#ccc;
+}
+.footer-social a:hover {
+	color:#b10015;
+}
+
+#circle {
+	padding:2rem 0 0 0;
+}
+
+
+
+
+/*css for shem*/
+#shem ul.nav-tabs {
+	border:none;
+}
+#shem li.nav-item {
+	display:block;
+	max-width:25%;
+	position:relative;
+	width:100%;
+	padding-right:0;
+	padding-left:0;
+	box-sizing:border-box;
+  overflow:hidden;
+}
+#shem a.nav-link {
+	padding:0 !important;
+	border:none;
+	border-radius:0rem;
+	color:#212529;
+  animation: around 4s linear infinite;
+  transition: all 0.5s;
+}
+#shem a.nav-link:hover {
+	background:url(../img/bg-line-45.png) repeat;
+}
+#shem a.nav-link.active {
+	background:linear-gradient(to bottom, #eaeaea, #f1f1f1);
+	color:#b10015;
+}
+#shem a.nav-link.active svg path {
+	fill:#b10015;
+}
+#shem  svg {
+	max-height:6em;
+	max-width:80%;
+}
+#shem svg path {
+	fill:#3d3b41;
+}
+#shem-text {
+	background:#f1f1f1;
+}
+#shem-text .tab-pane {
+	padding:2rem;
+}
+#shem-text ul {
+	padding-left:1rem !important;
+}
+#shem-text ul li {
+	margin-bottom:0.5rem;
+}
+#shem .row{
+	/background:#f1f1f1;
+}
+#shem .data-center {
+	background:#f1f1f1;
+	padding:1rem;
+	padding:1rem;
+}
+#shem .data-center svg {
+	max-width: 100%;
+}
+/*end css for shem*/
+
+
+/*css for radial progress bar*/
+
+#indicators .progress {
+	border-radius:0;
+	height:2rem;
+	font-size: .90rem;
+}
+#indicators .bg-1 {background:#e32237;}
+#indicators .bg-2 {background:#9a9a9a;}
+#indicators .bg-3 {background:#6e6e6e;}
+#indicators .bg-4 {background:#5f5f5f;}
+
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; 
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+
+svg.radial-progress text {
+  fill: #eee;
+  text-anchor: middle;
+}
+svg.radial-progress .percentage {
+	font-size:18px;
+}
+svg.radial-progress circle { stroke: #e32237; }
+
+/*end css for radial progress bar*/
+
+@media (max-width: 768px) {
+	#demo-canvas {
+		display:none;
+	}
+}
